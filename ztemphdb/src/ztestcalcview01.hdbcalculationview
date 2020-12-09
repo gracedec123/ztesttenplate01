@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="ztesttenplate01.ztemphdb::ztestcalcview01" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="ztestcalcview01"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ztesttenplate01.ztemphdb::CE1WRGR">
+    <resourceUri>ztesttenplate01.ztemphdb::CE1WRGR</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="MANDT"/>
+      <viewAttribute id="PALEDGER"/>
+      <viewAttribute id="VRGAR"/>
+      <viewAttribute id="VERSI"/>
+      <viewAttribute id="PERIO"/>
+      <viewAttribute id="PAOBJNR"/>
+      <viewAttribute id="PASUBNR"/>
+      <viewAttribute id="BELNR"/>
+      <viewAttribute id="POSNR"/>
+      <viewAttribute id="HZDAT"/>
+      <viewAttribute id="USNAM"/>
+      <viewAttribute id="GJAHR"/>
+      <viewAttribute id="PERDE"/>
+      <viewAttribute id="WADAT"/>
+      <viewAttribute id="FADAT"/>
+      <viewAttribute id="BUDAT"/>
+      <viewAttribute id="ALTPERIO"/>
+      <viewAttribute id="PAPAOBJNR"/>
+      <viewAttribute id="PAPASUBNR"/>
+      <viewAttribute id="KNDNR"/>
+      <viewAttribute id="ARTNR"/>
+      <viewAttribute id="FKART"/>
+      <viewAttribute id="FRWAE"/>
+      <viewAttribute id="KURSF"/>
+      <viewAttribute id="KURSBK"/>
+      <viewAttribute id="KURSKZ"/>
+      <viewAttribute id="REC_WAERS"/>
+      <viewAttribute id="KAUFN"/>
+      <viewAttribute id="KDPOS"/>
+      <viewAttribute id="RKAUFNR"/>
+      <viewAttribute id="SKOST"/>
+      <viewAttribute id="PRZNR"/>
+      <viewAttribute id="BUKRS"/>
+      <viewAttribute id="KOKRS"/>
+      <viewAttribute id="WERKS"/>
+      <viewAttribute id="GSBER"/>
+      <viewAttribute id="VKORG"/>
+      <viewAttribute id="VTWEG"/>
+      <viewAttribute id="SPART"/>
+      <viewAttribute id="HRKFT"/>
+      <viewAttribute id="PLIKZ"/>
+      <viewAttribute id="KSTAR"/>
+      <viewAttribute id="PSPNR"/>
+      <viewAttribute id="KSTRG"/>
+      <viewAttribute id="RBELN"/>
+      <viewAttribute id="RPOSN"/>
+      <viewAttribute id="STO_BELNR"/>
+      <viewAttribute id="STO_POSNR"/>
+      <viewAttribute id="PRCTR"/>
+      <viewAttribute id="PPRCTR"/>
+      <viewAttribute id="RKESTATU"/>
+      <viewAttribute id="TIMESTMP"/>
+      <viewAttribute id="COPA_AWTYP"/>
+      <viewAttribute id="COPA_AWORG"/>
+      <viewAttribute id="COPA_BWZPT"/>
+      <viewAttribute id="COPA_AWSYS"/>
+      <viewAttribute id="BZIRK"/>
+      <viewAttribute id="KDGRP"/>
+      <viewAttribute id="LAND1"/>
+      <viewAttribute id="PRODH"/>
+      <viewAttribute id="VKBUR"/>
+      <viewAttribute id="VKGRP"/>
+      <viewAttribute id="MVGR1"/>
+      <viewAttribute id="KVGR2"/>
+      <viewAttribute id="KVGR3"/>
+      <viewAttribute id="KVGR4"/>
+      <viewAttribute id="WWGR1"/>
+      <viewAttribute id="WWGR2"/>
+      <viewAttribute id="WWGR3"/>
+      <viewAttribute id="VRTNR"/>
+      <viewAttribute id="MVGR4"/>
+      <viewAttribute id="HIE01"/>
+      <viewAttribute id="ZVTNR"/>
+      <viewAttribute id="KTGRD"/>
+      <viewAttribute id="AUGRU"/>
+      <viewAttribute id="WWGR4"/>
+      <viewAttribute id="WWGR5"/>
+      <viewAttribute id="WWGR6"/>
+      <viewAttribute id="GEBIE"/>
+      <viewAttribute id="HIE02"/>
+      <viewAttribute id="HIE03"/>
+      <viewAttribute id="KUNRE"/>
+      <viewAttribute id="KUNRG"/>
+      <viewAttribute id="KUNWE"/>
+      <viewAttribute id="KVGR5"/>
+      <viewAttribute id="MVGR2"/>
+      <viewAttribute id="MVGR5"/>
+      <viewAttribute id="WWDLP"/>
+      <viewAttribute id="WWUOM"/>
+      <viewAttribute id="WWCSP"/>
+      <viewAttribute id="KVGR1"/>
+      <viewAttribute id="ZPLWE"/>
+      <viewAttribute id="VVSQT_ME"/>
+      <viewAttribute id="VVFDD"/>
+      <viewAttribute id="VVFHR"/>
+      <viewAttribute id="VVFRR"/>
+      <viewAttribute id="VVFSL"/>
+      <viewAttribute id="VVFTC"/>
+      <viewAttribute id="VVINT"/>
+      <viewAttribute id="VVLBR"/>
+      <viewAttribute id="VVMAT"/>
+      <viewAttribute id="VVOHD"/>
+      <viewAttribute id="VVPAL"/>
+      <viewAttribute id="VVREG"/>
+      <viewAttribute id="VVTCS"/>
+      <viewAttribute id="VVVDS"/>
+      <viewAttribute id="VVSQT"/>
+      <viewAttribute id="VVOSD"/>
+      <viewAttribute id="VVFRA"/>
+      <viewAttribute id="VVCOS"/>
+      <viewAttribute id="VVROY"/>
+      <viewAttribute id="VVCDT"/>
+      <viewAttribute id="VVACM"/>
+      <viewAttribute id="VVPPV"/>
+      <viewAttribute id="VVOOI"/>
+      <viewAttribute id="VVRCO"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="ztesttenplate01.ztemphdb::CE1WRGR"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Projection_1">
+  <attributes>
+    <attribute id="MANDT" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Client"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MANDT"/>
+    </attribute>
+    <attribute id="PALEDGER" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Currency type for an operating concern"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PALEDGER"/>
+    </attribute>
+    <attribute id="VRGAR" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Record Type"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VRGAR"/>
+    </attribute>
+    <attribute id="VERSI" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Plan version (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VERSI"/>
+    </attribute>
+    <attribute id="PERIO" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Period/year"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PERIO"/>
+    </attribute>
+    <attribute id="PAOBJNR" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Profitability Segment Number (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PAOBJNR"/>
+    </attribute>
+    <attribute id="PASUBNR" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Profitability Segment Changes (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PASUBNR"/>
+    </attribute>
+    <attribute id="BELNR" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Document number of line item in Profitability Analysis"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BELNR"/>
+    </attribute>
+    <attribute id="POSNR" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Item no. of CO-PA line item"/>
+      <keyMapping columnObjectName="Projection_1" columnName="POSNR"/>
+    </attribute>
+    <attribute id="HZDAT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Date on Which Record Was Created"/>
+      <keyMapping columnObjectName="Projection_1" columnName="HZDAT"/>
+    </attribute>
+    <attribute id="USNAM" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Created by"/>
+      <keyMapping columnObjectName="Projection_1" columnName="USNAM"/>
+    </attribute>
+    <attribute id="GJAHR" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Fiscal Year"/>
+      <keyMapping columnObjectName="Projection_1" columnName="GJAHR"/>
+    </attribute>
+    <attribute id="PERDE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Period"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PERDE"/>
+    </attribute>
+    <attribute id="WADAT" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Goods Issue Date"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WADAT"/>
+    </attribute>
+    <attribute id="FADAT" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice date (date created)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="FADAT"/>
+    </attribute>
+    <attribute id="BUDAT" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Posting Date"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BUDAT"/>
+    </attribute>
+    <attribute id="ALTPERIO" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Period/year in alternative period type"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ALTPERIO"/>
+    </attribute>
+    <attribute id="PAPAOBJNR" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Partner profitability segment number (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PAPAOBJNR"/>
+    </attribute>
+    <attribute id="PAPASUBNR" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Changes to partner profitability segments (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PAPASUBNR"/>
+    </attribute>
+    <attribute id="KNDNR" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KNDNR"/>
+    </attribute>
+    <attribute id="ARTNR" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product number"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ARTNR"/>
+    </attribute>
+    <attribute id="FKART" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Billing Type"/>
+      <keyMapping columnObjectName="Projection_1" columnName="FKART"/>
+    </attribute>
+    <attribute id="FRWAE" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Foreign currency key"/>
+      <keyMapping columnObjectName="Projection_1" columnName="FRWAE"/>
+    </attribute>
+    <attribute id="REC_WAERS" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Currency of the data record"/>
+      <keyMapping columnObjectName="Projection_1" columnName="REC_WAERS"/>
+    </attribute>
+    <attribute id="KAUFN" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Order Number"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KAUFN"/>
+    </attribute>
+    <attribute id="KDPOS" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Item Number in Sales Order"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KDPOS"/>
+    </attribute>
+    <attribute id="RKAUFNR" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Order Number"/>
+      <keyMapping columnObjectName="Projection_1" columnName="RKAUFNR"/>
+    </attribute>
+    <attribute id="SKOST" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sender cost center"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SKOST"/>
+    </attribute>
+    <attribute id="PRZNR" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sender Business Process"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRZNR"/>
+    </attribute>
+    <attribute id="BUKRS" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Company Code"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BUKRS"/>
+    </attribute>
+    <attribute id="KOKRS" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Controlling Area"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KOKRS"/>
+    </attribute>
+    <attribute id="WERKS" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Plant"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WERKS"/>
+    </attribute>
+    <attribute id="GSBER" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Business Area"/>
+      <keyMapping columnObjectName="Projection_1" columnName="GSBER"/>
+    </attribute>
+    <attribute id="VKORG" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Organization"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VKORG"/>
+    </attribute>
+    <attribute id="VTWEG" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Distribution Channel"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VTWEG"/>
+    </attribute>
+    <attribute id="SPART" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Division"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SPART"/>
+    </attribute>
+    <attribute id="HRKFT" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Origins (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="HRKFT"/>
+    </attribute>
+    <attribute id="PLIKZ" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Plan/Actual Indicator"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PLIKZ"/>
+    </attribute>
+    <attribute id="KSTAR" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cost Element"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KSTAR"/>
+    </attribute>
+    <attribute id="PSPNR" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Work Breakdown Structure Element (WBS Element)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PSPNR"/>
+    </attribute>
+    <attribute id="KSTRG" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cost Object"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KSTRG"/>
+    </attribute>
+    <attribute id="RBELN" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Reference document number for CO-PA line item"/>
+      <keyMapping columnObjectName="Projection_1" columnName="RBELN"/>
+    </attribute>
+    <attribute id="RPOSN" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Item number from reference document (CO-PA)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="RPOSN"/>
+    </attribute>
+    <attribute id="STO_BELNR" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Canceled document"/>
+      <keyMapping columnObjectName="Projection_1" columnName="STO_BELNR"/>
+    </attribute>
+    <attribute id="STO_POSNR" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Canceled document item"/>
+      <keyMapping columnObjectName="Projection_1" columnName="STO_POSNR"/>
+    </attribute>
+    <attribute id="PRCTR" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Profit Center"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRCTR"/>
+    </attribute>
+    <attribute id="PPRCTR" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Partner Profit Center"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PPRCTR"/>
+    </attribute>
+    <attribute id="RKESTATU" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Update status for CO-PA line items"/>
+      <keyMapping columnObjectName="Projection_1" columnName="RKESTATU"/>
+    </attribute>
+    <attribute id="COPA_AWTYP" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Reference Transaction"/>
+      <keyMapping columnObjectName="Projection_1" columnName="COPA_AWTYP"/>
+    </attribute>
+    <attribute id="COPA_AWORG" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Reference Organizational Units"/>
+      <keyMapping columnObjectName="Projection_1" columnName="COPA_AWORG"/>
+    </attribute>
+    <attribute id="COPA_BWZPT" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CO-PA Point of valuation"/>
+      <keyMapping columnObjectName="Projection_1" columnName="COPA_BWZPT"/>
+    </attribute>
+    <attribute id="COPA_AWSYS" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Logical system of source document"/>
+      <keyMapping columnObjectName="Projection_1" columnName="COPA_AWSYS"/>
+    </attribute>
+    <attribute id="BZIRK" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales district"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BZIRK"/>
+    </attribute>
+    <attribute id="KDGRP" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer group"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KDGRP"/>
+    </attribute>
+    <attribute id="LAND1" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country Key"/>
+      <keyMapping columnObjectName="Projection_1" columnName="LAND1"/>
+    </attribute>
+    <attribute id="PRODH" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product hierarchy"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRODH"/>
+    </attribute>
+    <attribute id="VKBUR" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Office"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VKBUR"/>
+    </attribute>
+    <attribute id="VKGRP" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales Group"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VKGRP"/>
+    </attribute>
+    <attribute id="MVGR1" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Market code"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MVGR1"/>
+    </attribute>
+    <attribute id="KVGR2" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="End-use Industry"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KVGR2"/>
+    </attribute>
+    <attribute id="KVGR3" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer Priority"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KVGR3"/>
+    </attribute>
+    <attribute id="KVGR4" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer group 4"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KVGR4"/>
+    </attribute>
+    <attribute id="WWGR1" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Brand"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWGR1"/>
+    </attribute>
+    <attribute id="WWGR2" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Family Group"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWGR2"/>
+    </attribute>
+    <attribute id="WWGR3" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Product Family"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWGR3"/>
+    </attribute>
+    <attribute id="VRTNR" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Sales employee"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VRTNR"/>
+    </attribute>
+    <attribute id="MVGR4" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Business Segment"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MVGR4"/>
+    </attribute>
+    <attribute id="HIE01" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer hierarchy Level 1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="HIE01"/>
+    </attribute>
+    <attribute id="ZVTNR" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Outside Sales Person"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ZVTNR"/>
+    </attribute>
+    <attribute id="KTGRD" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Account assignment group for this customer"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KTGRD"/>
+    </attribute>
+    <attribute id="AUGRU" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Order reason (reason for the business transaction)"/>
+      <keyMapping columnObjectName="Projection_1" columnName="AUGRU"/>
+    </attribute>
+    <attribute id="WWGR4" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Region"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWGR4"/>
+    </attribute>
+    <attribute id="WWGR5" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SKU"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWGR5"/>
+    </attribute>
+    <attribute id="WWGR6" order="78" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Production Plant"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWGR6"/>
+    </attribute>
+    <attribute id="GEBIE" order="79" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="State"/>
+      <keyMapping columnObjectName="Projection_1" columnName="GEBIE"/>
+    </attribute>
+    <attribute id="HIE02" order="80" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer hierarchy Level 2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="HIE02"/>
+    </attribute>
+    <attribute id="HIE03" order="81" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer hierarchy Level 3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="HIE03"/>
+    </attribute>
+    <attribute id="KUNRE" order="82" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Bill-to party"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KUNRE"/>
+    </attribute>
+    <attribute id="KUNRG" order="83" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Payer"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KUNRG"/>
+    </attribute>
+    <attribute id="KUNWE" order="84" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Ship-to party"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KUNWE"/>
+    </attribute>
+    <attribute id="KVGR5" order="85" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Customer group 5"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KVGR5"/>
+    </attribute>
+    <attribute id="MVGR2" order="86" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Unit of measure class"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MVGR2"/>
+    </attribute>
+    <attribute id="MVGR5" order="87" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material group 5"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MVGR5"/>
+    </attribute>
+    <attribute id="WWDLP" order="88" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Region of Dlv. Plant"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWDLP"/>
+    </attribute>
+    <attribute id="WWUOM" order="89" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Reporting UOM"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWUOM"/>
+    </attribute>
+    <attribute id="WWCSP" order="90" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DO NOT USE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WWCSP"/>
+    </attribute>
+    <attribute id="KVGR1" order="91" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Office/Group Overriden"/>
+      <keyMapping columnObjectName="Projection_1" columnName="KVGR1"/>
+    </attribute>
+    <attribute id="ZPLWE" order="92" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Country of ship-to party"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ZPLWE"/>
+    </attribute>
+    <attribute id="VVSQT_ME" order="93" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Base Unit of Measure"/>
+      <keyMapping columnObjectName="Projection_1" columnName="VVSQT_ME"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="KURSF" order="24" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Exchange rate"/>
+      <measureMapping columnObjectName="Projection_1" columnName="KURSF"/>
+    </measure>
+    <measure id="KURSBK" order="25" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Exchange rate for op.concern currency -&gt; Co.code currency"/>
+      <measureMapping columnObjectName="Projection_1" columnName="KURSBK"/>
+    </measure>
+    <measure id="KURSKZ" order="26" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Exchange rate op.concern currency -&gt; group currency"/>
+      <measureMapping columnObjectName="Projection_1" columnName="KURSKZ"/>
+    </measure>
+    <measure id="TIMESTMP" order="52" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Time created (Greenwich Meantime)"/>
+      <measureMapping columnObjectName="Projection_1" columnName="TIMESTMP"/>
+    </measure>
+    <measure id="VVFDD" order="94" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="COGS at Adjusted DMC"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVFDD"/>
+    </measure>
+    <measure id="VVFHR" order="95" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Freight-Hopper/Tank"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVFHR"/>
+    </measure>
+    <measure id="VVFRR" order="96" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Freight Cost"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVFRR"/>
+    </measure>
+    <measure id="VVFSL" order="97" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Freight-To Stor.Loc."/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVFSL"/>
+    </measure>
+    <measure id="VVFTC" order="98" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Freight-To Customers"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVFTC"/>
+    </measure>
+    <measure id="VVINT" order="99" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Inter/Intra Co.Sales"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVINT"/>
+    </measure>
+    <measure id="VVLBR" order="100" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="DMC-Labor"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVLBR"/>
+    </measure>
+    <measure id="VVMAT" order="101" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Prod Var-matl"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVMAT"/>
+    </measure>
+    <measure id="VVOHD" order="102" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="DMC - Overhead"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVOHD"/>
+    </measure>
+    <measure id="VVPAL" order="103" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Policy Allowances"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVPAL"/>
+    </measure>
+    <measure id="VVREG" order="104" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="COGS Adjustments"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVREG"/>
+    </measure>
+    <measure id="VVTCS" order="105" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Total Customer Sales"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVTCS"/>
+    </measure>
+    <measure id="VVVDS" order="106" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Volume Discounts"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVVDS"/>
+    </measure>
+    <measure id="VVSQT" order="107" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Sales Quantity"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVSQT"/>
+    </measure>
+    <measure id="VVOSD" order="108" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Other Sales Deduct."/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVOSD"/>
+    </measure>
+    <measure id="VVFRA" order="109" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Freight Adjustment"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVFRA"/>
+    </measure>
+    <measure id="VVCOS" order="110" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Cost of Sales at DMC"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVCOS"/>
+    </measure>
+    <measure id="VVROY" order="111" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Manuf Var-Materials"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVROY"/>
+    </measure>
+    <measure id="VVCDT" order="112" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Terms Discounts"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVCDT"/>
+    </measure>
+    <measure id="VVACM" order="113" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Agent Commissions"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVACM"/>
+    </measure>
+    <measure id="VVPPV" order="114" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Purchase Price Var"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVPPV"/>
+    </measure>
+    <measure id="VVOOI" order="115" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Oth.Operating Income"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVOOI"/>
+    </measure>
+    <measure id="VVRCO" order="116" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Real Cost ML"/>
+      <measureMapping columnObjectName="Projection_1" columnName="VVRCO"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="100" y="105"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="57" y="202"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

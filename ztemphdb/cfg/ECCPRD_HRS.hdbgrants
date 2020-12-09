@@ -1,0 +1,14 @@
+{
+	"ServiceName_2": {
+		"object_owner": { 
+			"roles": [
+				"ECCPRD_HRS::external_access_g"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"ECCPRD_HRS::external_access"
+			]
+		}
+	}
+}

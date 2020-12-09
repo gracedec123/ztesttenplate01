@@ -1,0 +1,8 @@
+{
+  "ztesttenplate01.ztemphdb::CE1WRGR": {
+    "target": {
+      "object": "CE1WRGR",
+      "schema": "ECCPRD_HRS"
+    }
+  }
+}

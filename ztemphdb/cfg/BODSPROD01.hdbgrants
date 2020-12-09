@@ -1,0 +1,14 @@
+{
+	"ServiceName_1": {
+		"object_owner": { 
+			"roles": [
+				"BODSPROD01::external_access_g"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"BODSPROD01::external_access"
+			]
+		}
+	}
+}
